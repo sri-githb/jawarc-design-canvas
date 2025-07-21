@@ -1,17 +1,11 @@
 import { ArrowRight, Play } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-architecture.jpg";
-
 const Hero = () => {
-  return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+  return <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
-        <img
-          src={heroImage}
-          alt="Modern Architecture"
-          className="w-full h-full object-cover"
-        />
+        <img src={heroImage} alt="Modern Architecture" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-primary/60" />
       </div>
 
@@ -36,22 +30,12 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button 
-              size="lg" 
-              className="bg-white text-primary hover:bg-white/90 px-8 py-3 text-lg"
-            >
+            <Button size="lg" className="bg-white text-primary hover:bg-white/90 px-8 py-3 text-lg">
               Explore Our Work
               <ArrowRight className="ml-2" size={20} />
             </Button>
             
-            <Button 
-              variant="outline" 
-              size="lg"
-              className="border-white text-white hover:bg-white hover:text-primary px-8 py-3 text-lg"
-            >
-              <Play className="mr-2" size={20} />
-              Watch Portfolio
-            </Button>
+            
           </div>
         </div>
 
@@ -62,8 +46,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;

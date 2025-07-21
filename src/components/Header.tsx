@@ -26,7 +26,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
   <img
-    src="/src/assets/black_logo.png"
+    src="/assets/black_logo.png"
     alt="Jawarc Logo"
     className="h-10"
   />

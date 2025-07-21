@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu, X, Instagram, Facebook, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import blackLogo from "../assets/black_logo.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -25,12 +26,12 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-  <img
-    src="/assets/black_logo.png"
-    alt="Jawarc Logo"
-    className="h-10"
-  />
-</div>
+            <img
+              src={blackLogo}
+              alt="Jawarc Logo"
+              className="h-10"
+            />
+          </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">

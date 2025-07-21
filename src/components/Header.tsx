@@ -25,13 +25,12 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <h1 className="text-xl font-bold text-foreground">
-              Jawarc
-            </h1>
-            <p className="text-xs text-muted-foreground -mt-1">
-              Architecture & Interior Designs
-            </p>
-          </div>
+  <img
+    src="/src/assets/black_logo.png"
+    alt="Jawarc Logo"
+    className="h-10"
+  />
+</div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
